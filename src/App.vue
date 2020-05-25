@@ -1,7 +1,7 @@
 <template>
   <div>
     <SearchBar @termChange="onTermChange"></SearchBar>
-    <VideoList :videos="videos"></VideoList>
+    <VideoList @videoSelect="onVideoSelect" :videos="videos"></VideoList>
   </div>
 </template>
 
@@ -21,6 +21,9 @@
       return { videos: [] };
     },
     methods: {
+      onVideoSelect(video) {
+        console.log(video);
+      },
       onTermChange(searchTerm) {
 
         axios.get('https://www.googleapis.com/youtube/v3/search', {
