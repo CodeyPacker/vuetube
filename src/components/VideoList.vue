@@ -20,6 +20,7 @@
     props: ['videos'],
     methods: {
       onVideoSelect(video) {
+        // emit the same event up to the App component
         this.$emit('videoSelect', video)
       }
     }

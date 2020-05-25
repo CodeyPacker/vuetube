@@ -16,6 +16,7 @@
     },
     methods: {
       onVideoSelect() {
+        // Sends event (containing the clicked video) up to the parent -> VideoList
         this.$emit('videoSelect', this.video);
       }
     }
