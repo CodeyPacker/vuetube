@@ -1,8 +1,10 @@
 <template>
-  <div class="header">
-    <div class="logo-wrapper">
-      <img src="../images/vue-logo.png" class="logo" alt="Vue logo"/>
-      <span class="vuetube">ueTube</span>
+  <div class="constraint">
+    <div class="header">
+      <div class="logo-wrapper">
+        <img src="../images/vue-logo.png" class="logo" alt="Vue logo"/>
+        <span class="vuetube">ueTube</span>
+      </div>
     </div>
   </div>
 </template>

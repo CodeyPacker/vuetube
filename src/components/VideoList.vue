@@ -1,13 +1,15 @@
 <template>
-  <ul>
-    <VideoListItem
-      v-for="video in videos"
-      :video="video"
-      :key="video.etag"
-      @videoSelect="onVideoSelect"
-    >
-    </VideoListItem>
-  </ul>
+  <div class="constraint">
+    <ul class="video-list">
+      <VideoListItem
+        v-for="video in videos"
+        :video="video"
+        :key="video.etag"
+        @videoSelect="onVideoSelect"
+      >
+      </VideoListItem>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -27,6 +29,15 @@
   }
 </script>
 
-<style>
+<style scope>
+  .video-list {
+    padding-left: 0;
+  }
 
+  @media screen and (min-width: 500px) {
+    .video-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 </style>

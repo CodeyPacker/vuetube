@@ -41,6 +41,7 @@
           }
         }).then(response => {
           this.videos = response.data.items;
+          console.log(this.videos)
         });
       }
     }
@@ -54,9 +55,16 @@
 
   body {
     margin: 0;
-    padding: 15px;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     background-color: #212121;
+  }
+
+  .constraint {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
   }
 </style>

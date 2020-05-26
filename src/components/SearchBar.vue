@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="constraint">
     <input @input="onInput"/>
   </div>
 </template>
@@ -16,4 +16,5 @@
 </script>
 
 <style>
+
 </style>
