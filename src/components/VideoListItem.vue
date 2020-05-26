@@ -27,7 +27,19 @@
 </script>
 
 <style scope>
-  @media screen and (max-width: 500px) {
+
+  .video-title {
+    color: #fff;
+    padding: 15px;
+    display: block;
+  }
+
+  .video-wrapper {
+    background-color: #000;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 700px) {
     .video-wrapper {
       position: relative;
     }
@@ -41,7 +53,6 @@
     }
 
     .thumbnail {
-      margin-right: 15px;
       /* 16/9 */
       position: absolute;
       top: 0;
@@ -58,15 +69,14 @@
       bottom: -45px;
       left: 0;
       right: 0;
-      background-color: #000;
-      color: #fff;
-      padding: 15px;
     }
   }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 700px) {
     .video-wrapper {
-      flex-basis: 50%;
+      width: 100%;
+      max-width: 47%;
+      margin-right: 20px;
     }
 
     .video {
@@ -76,7 +86,7 @@
     }
 
     .video-wrapper:nth-child(odd) {
-      padding-right: 20px;
+      margin-right: 20px;
     }
   }
 </style>

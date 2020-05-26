@@ -63,7 +63,7 @@
   .constraint {
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 1200px;
+    max-width: 1020px;
     margin-right: auto;
     margin-left: auto;
   }

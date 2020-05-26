@@ -34,10 +34,11 @@
     padding-left: 0;
   }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 700px) {
     .video-list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 </style>
