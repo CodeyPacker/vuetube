@@ -16,18 +16,14 @@ export default {
 </script>
 
 <style scope>
-  .header {
-    padding: 15px;
-  }
+  .header { padding: 40px 15px; }
 
   .logo-wrapper {
     display: flex;
     justify-content: center;
   }
 
-  .logo {
-    max-width: 40px;
-  }
+  .logo { max-width: 40px; }
 
   .vuetube {
     color: white;
@@ -36,9 +32,7 @@ export default {
   }
 
   @media screen and (min-width: 768px) {
-    .logo-wrapper {
-      justify-content: flex-start;
-    }
+    .logo-wrapper { justify-content: flex-start; }
   }
 
 </style>

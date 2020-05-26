@@ -30,9 +30,7 @@
 </script>
 
 <style scope>
-  .video-list {
-    padding-left: 0;
-  }
+  .video-list { padding-left: 0; }
 
   @media screen and (min-width: 700px) {
     .video-list {

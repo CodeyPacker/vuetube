@@ -27,7 +27,7 @@
 </script>
 
 <style scope>
-
+  /* I could do this in a lot less code without using the 16/9 ratio.... */
   .video-title {
     color: #fff;
     padding: 15px;
@@ -40,9 +40,7 @@
   }
 
   @media screen and (max-width: 700px) {
-    .video-wrapper {
-      position: relative;
-    }
+    .video-wrapper { position: relative; }
 
     .video {
       list-style-type: none;
@@ -69,6 +67,7 @@
       bottom: -45px;
       left: 0;
       right: 0;
+      background-color: #000;
     }
   }
 
@@ -76,7 +75,7 @@
     .video-wrapper {
       width: 100%;
       max-width: 47%;
-      margin-right: 20px;
+      margin-bottom: 35px;
     }
 
     .video {
@@ -85,8 +84,6 @@
       justify-content: center;
     }
 
-    .video-wrapper:nth-child(odd) {
-      margin-right: 20px;
-    }
+    .video-wrapper:nth-child(odd) { margin-right: 20px; }
   }
 </style>
