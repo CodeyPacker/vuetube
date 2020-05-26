@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
     <SearchBar @termChange="onTermChange"></SearchBar>
     <VideoDetail :video="selectedVideo"></VideoDetail>
     <VideoList @videoSelect="onVideoSelect" :videos="videos"></VideoList>
@@ -8,6 +9,7 @@
 
 <script>
   import axios from 'axios';
+  import Header from './components/Header';
   import SearchBar from './components/SearchBar';
   import VideoList from './components/VideoList';
   import VideoDetail from './components/VideoDetail';
@@ -16,6 +18,7 @@
   export default {
     name: 'App',
     components: {
+      Header,
       SearchBar,
       VideoList,
       VideoDetail
@@ -43,3 +46,17 @@
     }
   }
 </script>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-color: #212121;
+  }
+</style>
