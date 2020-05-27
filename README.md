@@ -1,5 +1,8 @@
 # vuetube
 
+## View (hopefully) working example:
+https://gracious-aryabhata-a9151e.netlify.app/
+
 ## Project setup
 ```
 npm install
