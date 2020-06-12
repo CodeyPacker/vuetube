@@ -2,7 +2,7 @@
   <div v-if="video">
     <iframe :src="videoUrl"/>
     <div class="details">
-      <h4>{{ video.snippet.title }}</h4>
+      <h4 class="title">{{ video.snippet.title }}</h4>
       <p>{{ video.snippet.description }}</p>
     </div>
   </div>
@@ -20,3 +20,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .details {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+  }
+
+  .title { margin-bottom: 15px; }
+</style>
